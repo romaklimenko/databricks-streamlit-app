@@ -1,14 +1,9 @@
-from invoke import task
-
-
-@task
-def hello(c):
-    print("Hello, World!")
+from invoke.tasks import task
 
 
 @task
 def run(c):
-    c.run("streamlit run app/app.py")
+    c.run("streamlit run app/Home.py")
 
 
 @task
