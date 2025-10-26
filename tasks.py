@@ -9,3 +9,10 @@ def hello(c):
 @task
 def run(c):
     c.run("streamlit run app/app.py")
+
+
+@task
+def requirements(c):
+    c.run(
+        "uv export --frozen --no-dev --no-hashes --no-annotate -o app/requirements.txt"
+    )

@@ -16,3 +16,4 @@ wheels/
 # Local artifacts
 *.log
 *.todo
+requirements.txt
